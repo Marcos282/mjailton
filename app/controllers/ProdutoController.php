@@ -2,10 +2,16 @@
 
 namespace app\controllers;
 
-class ProdutoController{
+use app\core\Controller;
+
+class ProdutoController extends Controller{
 
     public function index() {
         echo "Controller produto padrao";
+    }
+    
+    public function ver() {
+        $this->load("v_produto");
     }
     
     public function lista($valor = 0) {
