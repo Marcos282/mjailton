@@ -7,11 +7,20 @@
 
 <h1> Curso de MVC - mjailton - CLIENTE </h1>
 <p>Estamos estudando PHP.</p>
-<ul>
+<!--<ul>
     <li>Nome: <?=$nome?></li>
     <li>Email: <?=$email?></li>
     
-</ul>
+</ul>-->
+
+
+<?php
+
+foreach ($clientes as $cliente ) {
+       echo $cliente["nome"] . "<br>";
+      }
+
+?>
 
 
 </body>

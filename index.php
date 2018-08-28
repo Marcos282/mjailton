@@ -1,10 +1,11 @@
-<?php
+ <?php
 require './vendor/autoload.php';
 require './config/config.php';
 require './app/core/Core.php';
 
+
 $core = new Core;
-//echo "<pre>";
+echo "<pre>";
 $core->run();
 
 //echo "<br>Controller: " .$core->getController() . "<br>";

@@ -3,6 +3,9 @@
 namespace app\controllers;
 
 use app\core\Controller;
+use app\models\M_Cliente;
+
+
 
 class ClienteController extends Controller{
 
@@ -18,7 +21,12 @@ class ClienteController extends Controller{
     
     
     public function lista() {
-        echo "estou listando os clientes";
+        $clientes = new M_Cliente();     
+//        var_dump($clientes->lista());
+        
+        $dados["clientes"] = $clientes->lista();
+        $this->load("v_cliente",$dados);
+        
     }
     
  
