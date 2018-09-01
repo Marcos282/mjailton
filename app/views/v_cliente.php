@@ -13,15 +13,13 @@
     
 </ul>-->
 
-
 <?php
 
 foreach ($clientes as $cliente ) {
-       echo $cliente["nome"] . "<br>";
+       echo $cliente["nome"] . " - " . $cliente["email"] . "<br>";
       }
 
 ?>
-
 
 </body>
 </html>
